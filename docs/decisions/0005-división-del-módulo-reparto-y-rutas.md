@@ -4,7 +4,7 @@
 * Deciders: Cristian
 * Date: 2024-02-14
 
-Technical Story: RF2.3
+Technical Story: RF2
 
 ## Context and Problem Statement
 
