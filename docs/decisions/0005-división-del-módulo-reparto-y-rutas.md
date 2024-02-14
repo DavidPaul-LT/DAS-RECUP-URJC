@@ -17,6 +17,7 @@ Al módulo de reparto y rutas se le exige gestionar el reparto de las flotas de 
 ## Considered Options
 
 * 0005-1-Dividir el módulo en dos módulos
+* 0005-2 Mantener la funcionalidad actual del módulo de Reparto y rutas
 
 ## Decision Outcome
 
@@ -31,3 +32,9 @@ Se dividirá el módulo de Reparto y Rutas en dos módulo, uno de Repartos y otr
 * Good, because Se separa la responsabilidad única que se tenía hasta el momento
 * Good, because Se promueve la encapsulación, dando lugar a una mayor claridad y simplicidad en el diseño de la arquitectura
 * Bad, because Es posible que la división del componente traiga consigo una complejidad adicional en el diseño y desarrollo del sistema
+
+### 0005-2 Mantener la funcionalidad actual del módulo de Reparto y rutas
+
+Las responsabilidades del módulo actual no son lo suficientemente grandes como para requerir que el módulo existente se tenga que dividir en varios módulos
+
+* Bad, because La concentración de carga de trabajo en un solo módulo convierte a este en un punto vulnerable frente a fallas del sistema
