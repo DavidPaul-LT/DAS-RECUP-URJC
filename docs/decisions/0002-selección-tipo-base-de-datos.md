@@ -46,6 +46,6 @@ Siendo una base de datos relacional y ordenada de SQL (Structured Query Language
 
 Este tipo de base de datos no utilizan el Structured Query Language, haciendo de ellas bases de datos no relacionales.
 
-* Good, because La implementación es menos costosa.
+* Good, because La implementación es menos costosa en términos de tiempo.
 * Bad, because Los datos se encuentran desordenados, haciendo de la recuperación de ellos algo más complicado y tardado.
 * Bad, because Son incompatibles con bases SQL, que son estandarizadas y más frecuentes.
