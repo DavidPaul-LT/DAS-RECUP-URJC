@@ -1,6 +1,6 @@
 # División del módulo reparto y rutas
 
-* Status: proposed
+* Status: accepted
 * Deciders: Cristian
 * Date: 2024-02-14
 
@@ -21,7 +21,17 @@ Al módulo de reparto y rutas se le exige gestionar el reparto de las flotas de 
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0005-1-Dividir el módulo en dos módulos", because comes out best.
+
+### Positive Consequences
+
+* Al estar divididos, es más fácil realizar un seguimiento de la actividad de cada módulo.
+* El sistema se vuelve más simple con el módulo separado.
+
+### Negative Consequences
+
+* Puede suponer una carga mayor para el servidor.
+* Es probable que requiera compatibilidad para los módulos que sostengan una comunicación con cualquiera de los módulos de esta partición.
 
 ## Pros and Cons of the Options
 

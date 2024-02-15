@@ -1,6 +1,6 @@
 # Seleccion Pago Externo
 
-* Status: proposed
+* Status: accepted
 * Deciders: Ángel
 * Date: 2024-02-14
 
@@ -22,7 +22,15 @@ Se requiere diseñar un método de pagos de forma telemática. ¿Cuál puede ser
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "Utilizar API de pasarela de pago", because comes out best.
+
+### Positive Consequences
+
+* Al ser externo, no hay que hacerlo de manera propia, lo que supone una mejor división de la responsabilidad.
+
+### Negative Consequences
+
+* No hay control completo sobre la pasarela de pago.
 
 ## Pros and Cons of the Options
 
@@ -31,7 +39,6 @@ Chosen option: "", because comes out best.
 Se realizaría una pasarela de pago propia de la empresa para realizar los pagos de forma telemática.
 
 * Good, because Es un artefacto único y fácilmente entendible y personalizable para la empresa.
-* Bad, because Los costos pueden ser altos.
 * Bad, because Puede tomar mucho tiempo, atrasando el producto.
 * Bad, because Requiere de arduo trabajo para cumplir el fin de permitir tantas entidades bancarias como pueda.
 
@@ -40,6 +47,5 @@ Se realizaría una pasarela de pago propia de la empresa para realizar los pagos
 En vez de crear una pasarela de pago propia, se podría implementar una de terceros que permita realizar los pagos de forma telemática.
 
 * Good, because No hace falta implementarlo.
-* Good, because Los costos pueden ser menores.
 * Good, because La variedad de permisión de entidades de cuentas bancarias es grande.
 * Bad, because No existe control completo de la pasarela.

@@ -1,6 +1,6 @@
-# Incorporación de un módulo de comunicación en la lógica de negocio
+# Incorporación de un método de comunicación en la lógica de negocio
 
-* Status: proposed
+* Status: accepted
 * Deciders: Cristian
 * Date: 2024-02-14
 
@@ -22,7 +22,15 @@ La arquitectura eventualmente se compondrá de numerosos módulos y/o componente
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0006-1-Crear un módulo que centralice la comunicación entre otros elementos de la lógica de negocio", because comes out best.
+
+### Positive Consequences
+
+* El módulo se puede encargar del resto de los módulos del servidor.
+
+### Negative Consequences
+
+* Si el módulo tuviese un fallo afectaría a gran parte del sistema, provocando que las comunicaciones se vuelvan inviables.
 
 ## Pros and Cons of the Options
 
@@ -38,5 +46,5 @@ Se creará un componente específico para desempeñar la intermediación de mens
 
 En lugar de emplear un módulo centralizado, se opta por asignar la responsabilidad de poder comunicarse con otros elementos a cada módulo o componente integrado en la lógica de negocio
 
-* Good, because Se permite una mayor especifidad
+* Good, because Se permite un mayor nivel de detalle.
 * Bad, because La complejidad del sistema aumentaría a medida que cada módulo se tenga que preocupar de conocer los detalles de la comunicación de los otros elementos de la arquitectura

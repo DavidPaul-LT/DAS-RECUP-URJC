@@ -1,6 +1,6 @@
 # Selección Tipo Base de Datos
 
-* Status: proposed
+* Status: accepted
 * Deciders: Angel
 * Date: 2024-02-14
 
@@ -21,7 +21,15 @@ En la arquitectura, se tiene planteada la existencia de 2 bases de datos a las q
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "Base de datos SQL", because comes out best.
+
+### Positive Consequences
+
+* Los datos estarán ordenados y será más fácil encontrarlos.
+
+### Negative Consequences
+
+* Los tiempos de recuperación de datos se verán aumentados, haciendo de esta acción algo más lento.
 
 ## Pros and Cons of the Options
 

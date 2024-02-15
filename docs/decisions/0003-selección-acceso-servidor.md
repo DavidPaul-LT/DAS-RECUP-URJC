@@ -1,6 +1,6 @@
 # Selección Acceso Servidor
 
-* Status: proposed
+* Status: accepted
 * Deciders: Angel
 * Date: 2024-02-14
 
@@ -22,7 +22,16 @@ Para entrar al servidor, se requiere de un acceso que conecte la capa del client
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "API Gateway Centralizado", because comes out best.
+
+### Positive Consequences
+
+* No tomará tanto trabajo implementarlo.
+* Todo el tráfico es visible desde un único punto.
+
+### Negative Consequences
+
+* Hay que tener especial reparo por los cuellos de botella de parte de la capa de cliente.
 
 ## Pros and Cons of the Options
 
