@@ -1,7 +1,8 @@
 # Selección de patrón de diseño del método de comunicación
 
-* Status: accepted
-* Date: 2024-02-14
+* Status: deprecated
+* Deciders: Angel, Cristian
+* Date: 2024-02-23
 
 Technical Story: RF2
 
@@ -11,7 +12,8 @@ Es necesario escoger el patrón de diseño para el  nuevo componente de intermed
 
 ## Decision Drivers
 
-* Se ha optado por diseñar un módulo de comunicación para la capa de lógica de negocio
+* Se ha optado por diseñar un módulo de comunicación para los componentes de estadísticas, repartos, y pedidos.
+* El módulo de estadísticas recopila información de ambos.
 
 ## Considered Options
 

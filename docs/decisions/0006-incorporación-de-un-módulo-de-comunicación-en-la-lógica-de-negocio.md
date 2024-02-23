@@ -1,8 +1,8 @@
 # Incorporación de un método de comunicación en la lógica de negocio
 
-* Status: accepted
+* Status: superseded
 * Deciders: Cristian
-* Date: 2024-02-14
+* Date: 2024-02-23
 
 Technical Story: RF2
 
@@ -12,25 +12,26 @@ La arquitectura eventualmente se compondrá de numerosos módulos y/o componente
 
 ## Decision Drivers
 
-* La lógica de negocio cuenta con varios módulos: clientes, pedidos, reparto y rutas, estadísticas
+* La lógica de negocio cuenta con varios clases: pedidos, reparto, y estadísticas
 * La arquitectura debe contar con los elementos necesarios como para ejecutar los microservicios
+* La clase de estadísticas recopila información de pedidos y del reparto. No existe otro tipo de comunicación entre las clases.
 
 ## Considered Options
 
 * 0006-1-Crear un módulo que centralice la comunicación entre otros elementos de la lógica de negocio
-* 0006-2 Implementar interfaces de comunicación en cada elemento de la lógica de negocio
+* 0006-2 Conectar las clases entre sí de forma directa
 
 ## Decision Outcome
 
-Chosen option: "0006-1-Crear un módulo que centralice la comunicación entre otros elementos de la lógica de negocio", because comes out best.
+Chosen option: "0006-2 Conectar las clases entre sí de forma directa", because comes out best.
 
 ### Positive Consequences
 
-* El módulo se puede encargar del resto de los módulos del servidor.
+* La asociación es simple y no requiere de módulos extra.
 
 ### Negative Consequences
 
-* Si el módulo tuviese un fallo afectaría a gran parte del sistema, provocando que las comunicaciones se vuelvan inviables.
+* Solo permite conexiones de formas básicas. Para operaciones más complejas se requerirá diseñar un módulo apto para esas comunicaciones.
 
 ## Pros and Cons of the Options
 
@@ -42,7 +43,7 @@ Se creará un componente específico para desempeñar la intermediación de mens
 * Good, because Se dota de una mayor flexibilidad a la comunicación, dado que se permite al resto de elementos de la arquitectura funcionar de manera independiente y responder a estos mensajes en el momento adecuado
 * Bad, because Mayor exposición a un riesgo de cuello de botella
 
-### 0006-2 Implementar interfaces de comunicación en cada elemento de la lógica de negocio
+### 0006-2 Conectar las clases entre sí de forma directa
 
 En lugar de emplear un módulo centralizado, se opta por asignar la responsabilidad de poder comunicarse con otros elementos a cada módulo o componente integrado en la lógica de negocio
 

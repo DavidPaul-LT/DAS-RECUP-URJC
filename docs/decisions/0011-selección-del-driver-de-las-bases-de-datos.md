@@ -11,7 +11,7 @@ Se necesita determinar qué driver se empleará para acceder a las bases de dato
 
 ## Decision Drivers
 
-* Dado que las dos bases de datos son ambas relacionales, es beneficioso usar el mismo driver para evitar crear una compljidad adicional en la arquitectura
+* Dado que las dos bases de datos son ambas relacionales, es beneficioso usar el mismo driver para evitar crear una complejidad adicional en la arquitectura
 
 ## Considered Options
 
@@ -23,11 +23,15 @@ Se necesita determinar qué driver se empleará para acceder a las bases de dato
 
 Chosen option: "0011-1 MySQL", because comes out best.
 
+### Positive Consequences
+
+* Beneficia a la compañía
+
 ## Pros and Cons of the Options
 
 ### 0011-1 MySQL
 
-En la capa de acceso a datos, se añadirá un componente MySQLDriver que sirve como driver a las bases de datos relacionales. Este componente permite el establecimiento la conexión entre las bases de datos empleadas y los componentes o módulos que requieran de hacer consultas o manipular las mismas.
+En la capa de lógica de negocio, se diseñará un componente MySQLDriver que sirve como driver a las bases de datos relacionales. Este componente permite el establecimiento la conexión entre las bases de datos empleadas y los componentes o módulos que requieran de hacer consultas o manipular las mismas.
 
 * Good, because MySQL proporciona una interfaz para que el acceso y la modificación de los datos almacenados sea más llevadera
 * Good, because MySQL sigue los estándares SQL ANSI, lo que facilita la migración de aplicaciones entre diferentes sistemas de gestión de bases de datos relacionales
