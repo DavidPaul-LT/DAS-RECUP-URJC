@@ -21,13 +21,25 @@ Se necesita determinar qué driver se empleará para acceder a las bases de dato
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0011-1 MySQL", because comes out best.
 
 ## Pros and Cons of the Options
 
 ### 0011-1 MySQL
 
-MySQL es un sistema de gestión de bases de datos relacionales ampliamente utilizado en aplicaciones de software. Su función principal es almacenar, organizar y recuperar datos de manera eficiente.
+En la capa de acceso a datos, se añadirá un componente MySQLDriver que sirve como driver a las bases de datos relacionales. Este componente permite el establecimiento la conexión entre las bases de datos empleadas y los componentes o módulos que requieran de hacer consultas o manipular las mismas.
 
 * Good, because MySQL proporciona una interfaz para que el acceso y la modificación de los datos almacenados sea más llevadera
 * Good, because MySQL sigue los estándares SQL ANSI, lo que facilita la migración de aplicaciones entre diferentes sistemas de gestión de bases de datos relacionales
+
+### 0011-2 PostgreSQL
+
+En la capa de acceso a datos, se añadirá un componente PostgreSQLDriver que sirve como driver a las bases de datos relacionales. Este componente permite el establecimiento la conexión entre las bases de datos empleadas y los componentes o módulos que requieran de hacer consultas o manipular las mismas.
+
+* Good, because Es compatible con los estándares SQL
+
+### 0011-3 SQLite
+
+En la capa de acceso a datos, se añadirá un componente SQLiteDriver que sirve como driver a las bases de datos relacionales. Este componente permite el establecimiento la conexión entre las bases de datos empleadas y los componentes o módulos que requieran de hacer consultas o manipular las mismas.
+
+* Good, because No requiere un servidor de bases de datos separado
