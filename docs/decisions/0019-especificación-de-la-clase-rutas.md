@@ -26,4 +26,4 @@ Chosen option: "0019-1 Agregar a la clase Rutas de la capa de lógica de negocio
 
 ### 0019-1 Agregar a la clase Rutas de la capa de lógica de negocio de la arquitectura estos atributos
 
-La clase de Reparto tendrá los atributos "ruta_elegida" e "demora", y el método "seleccionarRuta"
+La clase de Rutas tendrá los atributos "ruta_elegida" e "demora", y el método "seleccionarRuta"

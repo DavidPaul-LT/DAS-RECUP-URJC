@@ -31,6 +31,6 @@ Chosen option: "0014-1 Agregar a la clase Pedido contenida en la capa de lógica
 
 ### 0014-1 Agregar a la clase Pedido contenida en la capa de lógica de negocio las características
 
-La clase obtiene los atributos "lim_pedidos", "info_cliente", "info_pedido", "coste_total", "coste_individual_productos" y "direccion_envio". También tendrá los métodos "calcularCostePedido", "mostrarPedido", "realizarPago", "cancelarPedido".
+La clase obtiene los atributos "lim_pedidos", "info_cliente", "info_pedido", "coste_total", "coste_individual_productos" y "direccion_envio". También tendrá los métodos "calcularCostePedido", "mostrarPedido", "realizarPago", "cancelarPedido" y "realizarPedido".
 
 * Good, because Satisface los requerimientos del usuario
