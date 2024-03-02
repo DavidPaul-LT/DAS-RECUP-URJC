@@ -1,6 +1,6 @@
 # Diseño Capa Cliente
 
-* Status: proposed
+* Status: accepted
 * Deciders: Angel, Cristian
 * Date: 2024-02-23
 
@@ -21,7 +21,7 @@ En la capa de cliente, se deben especificar las clases características del caso
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0016-1 Añadir clases Ordenador y Telefono", because comes out best.
 
 ## Pros and Cons of the Options
 

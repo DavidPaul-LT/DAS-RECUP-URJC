@@ -1,6 +1,6 @@
 # Conexión al servidor
 
-* Status: proposed
+* Status: accepted
 * Deciders: Angel, Cristian
 * Date: 2024-02-22
 

@@ -1,6 +1,7 @@
 # Selección del driver de las bases de datos
 
-* Status: proposed
+* Status: accepted
+* Deciders: Angel, Cristian
 * Date: 2024-02-22
 
 Technical Story: RF1

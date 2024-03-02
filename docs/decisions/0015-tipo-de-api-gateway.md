@@ -1,6 +1,6 @@
 # Tipo de API Gateway
 
-* Status: proposed
+* Status: accepted
 * Deciders: Angel, Cristian
 * Date: 2024-02-23
 
@@ -16,29 +16,29 @@ Tras haber diseñado el tipo de conexión al servidor, es momento de decidir sob
 
 ## Considered Options
 
-* 0015-1 Amazon API Gateway
-* 0015-2 NGINX API Gateway
-* 0015-3 Kong API Gateway
+* 0015-1 Amazon API Gateway Versión 4
+* 0015-2 NGINX API Gateway Versión 1.32.0
+* 0015-3 Kong API Gateway Versión 3.6
 
 ## Decision Outcome
 
-Chosen option: "", because comes out best.
+Chosen option: "0015-1 Amazon API Gateway Versión 4", because comes out best.
 
 ## Pros and Cons of the Options
 
-### 0015-1 Amazon API Gateway
+### 0015-1 Amazon API Gateway Versión 4
 
 El componente API Gateway será tomado de forma externa por parte del ofrecido por Amazon Services. Este API Gateway irá entre la capa de cliente y la capa de lógica de negocio, sirviendo así como un puente de establecimiento de conexión.
 
 * Good, because Ofrece ambos tipos de Gateways, tanto HTTP como REST.
 
-### 0015-2 NGINX API Gateway
+### 0015-2 NGINX API Gateway Versión 1.32.0
 
 El componente API Gateway será tomado de forma externa por parte del ofrecido por NGINX. Este API Gateway irá entre la capa de cliente y la capa de lógica de negocio, sirviendo así como un puente de establecimiento de conexión.
 
 * Good, because Este API Gateway ofrece una experiencia sincrónica a base de enrutar todas las solicitudes a sus servicios correspondientes.
 
-### 0015-3 Kong API Gateway
+### 0015-3 Kong API Gateway Versión 3.6
 
 El componente API Gateway será tomado de forma externa por parte del ofrecido por Kong. Este API Gateway irá entre la capa de cliente y la capa de lógica de negocio, sirviendo así como un puente de establecimiento de conexión.
 
