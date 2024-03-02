@@ -27,4 +27,4 @@ Chosen option: "0018-1 Agregar a la clase Reparto de la capa de lógica de negoc
 
 ### 0018-1 Agregar a la clase Reparto de la capa de lógica de negocio de la arquitectura estos atributos
 
-La clase de Reparto tendrá los atributos "incidencia", "info_reparto", "ruta_escogida", "transportes", y los métodos "cambiarEstadoReparto", "enviarNotificacionReparto", "mostrarRutaActual" y "seleccionarTransporte"
+La clase de Reparto tendrá los atributos "incidencia", "info_reparto", "ruta_escogida", "transportes", y los métodos "cambiarEstadoReparto", "enviarNotificacionReparto", "mostrarRutaActual", y "seleccionarTransporte"
