@@ -4,7 +4,7 @@
 * Deciders: Ángel
 * Date: 2024-02-14
 
-Technical Story: RF2.2.2
+Technical Story: RF2.2.1
 
 ## Context and Problem Statement
 
