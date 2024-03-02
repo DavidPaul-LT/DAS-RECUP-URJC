@@ -16,14 +16,14 @@ El módulo interno que facilita las rutas debe ser reforzado añadiendo una list
 
 ## Considered Options
 
-* 0019-1 Agregar a la clase Reparto de la capa de lógica de negocio de la arquitectura estos atributos
+* 0019-1 Agregar a la clase Rutas de la capa de lógica de negocio de la arquitectura estos atributos
 
 ## Decision Outcome
 
-Chosen option: "0019-1 Agregar a la clase Reparto de la capa de lógica de negocio de la arquitectura estos atributos", because comes out best.
+Chosen option: "0019-1 Agregar a la clase Rutas de la capa de lógica de negocio de la arquitectura estos atributos", because comes out best.
 
 ## Pros and Cons of the Options
 
-### 0019-1 Agregar a la clase Reparto de la capa de lógica de negocio de la arquitectura estos atributos
+### 0019-1 Agregar a la clase Rutas de la capa de lógica de negocio de la arquitectura estos atributos
 
 La clase de Reparto tendrá los atributos "ruta_elegida" e "demora", y el método "seleccionarRuta"
